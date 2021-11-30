@@ -1,0 +1,73 @@
+.sideBarContainer {
+  width: 330px;
+  height: 540px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  > div:first-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15),
+      0px 0px 1px rgba(9, 30, 66, 0.31);
+    border-radius: 0px 10px 10px 0px;
+    left: -310px;
+    transition: 0.3s;
+
+    .header {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 30px;
+
+      > span {
+        margin-left: 25px;
+        font-size: 22px;
+        align-items: center;
+        text-align: center;
+        color: #0065ff;
+      }
+    }
+
+    .body {
+      margin-top: 30px;
+      padding: 0px 40px;
+    }
+  }
+}
+
+.sideBar::before {
+  clear: both;
+  content: '';
+  display: table;
+  height: 0;
+}
+
+.rowButton {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  left: 305px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #ffffff;
+  &:hover {
+    cursor: pointer;
+  }
+  > img {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+}

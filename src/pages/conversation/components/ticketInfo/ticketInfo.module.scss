@@ -1,0 +1,33 @@
+@import 'assets/styles/variables.scss';
+
+.ticketInfo {
+  display: flex;
+  padding: 15px;
+  max-width: 250px;
+  background: rgba(222, 235, 255, 0.4);
+  border-radius: 10px;
+  .icon {
+    > img {
+      max-width: 20px;
+      min-width: 20px;
+    }
+  }
+  .items {
+    margin-left: 10px;
+
+    > *:not(:first-child) {
+      margin-top: 5px;
+    }
+
+    > div > span {
+      color: $blueGray-color;
+      font-size: 12px;
+    }
+
+    .bold {
+      font-weight: bold;
+      font-size: 13px;
+      color: $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.basicInput {
+  margin-top: 20px;
+  min-width: 206px;
+  width: 100%;
+
+  > label {
+    padding-left: 2px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 3px;
+  }
+
+  .textField {
+    background-color: #f4f5f7;
+  }
+
+  > div > span {
+    padding: 0 5px;
+    svg {
+      color: #42526e;
+    }
+  }
+
+  &.noMargin {
+    margin-top: 0px;
+  }
+}
+
+.templateName {
+  background-color: transparent;
+  font-size: 12px;
+  border: 2px solid #de350b;
+  border-radius: 3px;
+
+  & div {
+    border: none;
+  }
+
+  & input {
+    background-color: transparent;
+    color: #de350b;
+  }
+}

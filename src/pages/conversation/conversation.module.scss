@@ -1,0 +1,30 @@
+@import 'assets/styles/variables.scss';
+
+.conversation {
+  .card {
+    .main {
+      padding: 10px 40px;
+      .messages {
+        > *:not(:first-child) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+// .conversation {
+//   .card {
+//     .main {
+//       padding: 10px 40px;
+//       overflow: hidden;
+//       .messages {
+//         max-height: 350px;
+//         overflow: auto;
+//         > *:not(:first-child) {
+//           margin-top: 10px;
+//         }
+//       }
+//     }
+//   }
+// }

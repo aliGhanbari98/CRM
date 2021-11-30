@@ -1,0 +1,23 @@
+.forgot-form {
+  > p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+.verification-input__buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.forgot-form__button {
+  margin-top: 32px;
+}
+
+.higher-margin {
+  margin-top: 50px;
+}

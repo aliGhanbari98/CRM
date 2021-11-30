@@ -1,0 +1,5 @@
+export { default as TotalCustomers } from './total_customers/total_customers'
+export { default as TableHeader } from './table_header/table_header'
+export { TableHeaderDustbin } from './table_header/table_header'
+export { default as ImportCustomers } from './import_customers/import_customers'
+export { default as AddCustomer } from './add_customer/add_customer'

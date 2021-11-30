@@ -1,0 +1,162 @@
+@import 'assets/styles/variables';
+
+.customersPage {
+  .segment {
+    > header {
+      color: #06142b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 240px;
+
+      > span {
+        font-size: 14px;
+      }
+
+      > div {
+        width: 70%;
+      }
+    }
+
+    .row {
+      display: flex;
+      margin: 20px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        > * {
+          min-height: 300px;
+        }
+      }
+
+      > * {
+        flex: 1 0 21%;
+        margin: 0 10px;
+        min-height: 220px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .totalCustomers {
+        height: 100%;
+      }
+
+      .lineChart {
+        max-height: 300px;
+      }
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #6b778c;
+      font-size: 14px;
+
+      .sort {
+        display: flex;
+        align-items: center;
+
+        > span {
+          margin-left: 15px;
+        }
+
+        > div {
+          width: 120px;
+        }
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+
+        .filterButton {
+          appearance: none;
+          background: transparent;
+          border: none;
+          padding: 5px;
+          margin-right: 15px;
+          border-radius: 3px;
+          cursor: pointer;
+          transition: all 0.15s;
+          color: #42526e;
+
+          &:hover,
+          &:focus {
+            background: rgba(9, 30, 66, 0.1);
+          }
+
+          &:active {
+            background: rgba(9, 30, 66, 0.15);
+          }
+        }
+
+        .exportButton {
+          height: 32px;
+
+          button {
+            background: rgba(9, 30, 66, 0.04);
+            font-size: 12px !important;
+            font-weight: 300;
+            color: #42526e !important;
+            padding: 0 5px;
+            width: 59px;
+            &:hover,
+            &:focus {
+              background: rgba(9, 30, 66, 0.1);
+            }
+          }
+        }
+      }
+    }
+
+    .dataTable {
+      margin-top: 15px;
+    }
+  }
+
+  .import {
+    .card {
+      > div {
+        margin-top: 10px;
+      }
+
+      .columnsWrapper {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+
+        > *:first-child {
+          margin-right: 15px;
+        }
+
+        .outlinedButton {
+          button {
+            color: $primary-color !important;
+          }
+        }
+      }
+    }
+  }
+}

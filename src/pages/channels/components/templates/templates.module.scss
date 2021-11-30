@@ -1,0 +1,37 @@
+@import 'assets/styles/variables';
+
+.templates {
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+
+    > * {
+      color: $blueGray-color;
+    }
+
+    > span {
+      font-size: 12px;
+      margin-left: 10px;
+      font-weight: 500;
+    }
+  }
+
+  .templatesList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 220px;
+    padding: 0px 20px 20px 20px;
+    background: #ffffff;
+    box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15),
+      0px 0px 1px rgba(9, 30, 66, 0.31);
+    border-radius: 10px;
+
+    > div {
+      margin-top: 20px;
+      flex: 0 0 20%;
+    }
+  }
+}

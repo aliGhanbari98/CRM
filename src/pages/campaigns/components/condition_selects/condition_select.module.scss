@@ -1,0 +1,70 @@
+.condition {
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    flex: 0 0 220px;
+    margin: 10px 0;
+    margin-right: 10px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    > div {
+      width: 100%;
+    }
+
+    > span {
+      color: #42526e;
+      margin-right: 10px;
+    }
+
+    .button {
+      flex: 0 0 48px;
+      margin-left: 10px;
+
+      button {
+        width: 48px !important;
+        height: 40px !important;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.templates {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  border-radius: 7px;
+  min-width: 800px;
+  background: #fff;
+  box-shadow: 0 0 1px 0 rgba(9, 30, 66, 0.31),
+    0 8px 12px 0 rgba(9, 30, 66, 0.15);
+  z-index: -100;
+  opacity: 0;
+  transition: all 0.3s;
+
+  > div {
+    box-shadow: none;
+    display: block;
+
+    > div {
+      max-height: 185px;
+      width: auto !important;
+    }
+  }
+
+  &.open {
+    z-index: 100;
+    opacity: 1;
+  }
+
+  :global(.slick-slider) {
+    height: 185px;
+  }
+}

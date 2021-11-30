@@ -1,0 +1,12 @@
+@import 'assets/styles/variables';
+
+.account {
+  > section {
+    > *:not(:first-child) {
+      margin-top: 15px;
+    }
+    > h4 {
+      margin-top: 20px;
+    }
+  }
+}

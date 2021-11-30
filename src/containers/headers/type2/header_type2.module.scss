@@ -1,0 +1,50 @@
+@import 'assets/styles/variables';
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px 24px 20px 0px;
+
+  > :not(:last-child) {
+    margin-left: 35px;
+  }
+
+  > div > button {
+    color: #00875a !important;
+
+    &:hover {
+      border: 3px solid #00875a !important;
+      color: #00875a !important;
+    }
+
+    &:active,
+    &[data-firefox-is-active='true'] {
+      color: #00875a !important;
+      background: #00875a2b;
+    }
+  }
+
+  input::placeholder {
+    color: $red-color;
+  }
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+
+  :not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
+.undoButton:hover {
+  cursor: pointer;
+}

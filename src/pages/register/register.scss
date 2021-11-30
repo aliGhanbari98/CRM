@@ -1,0 +1,67 @@
+@import 'assets/styles/variables.scss';
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f5f7;
+  height: 100%;
+  color: $secondary-color;
+  padding-bottom: 50px;
+
+  .register__add-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  > .register-title {
+    font-size: 29px;
+    font-weight: 500;
+    margin: 17px 0px;
+    padding-top: 50px;
+  }
+
+  .policy {
+    margin-top: 40px;
+    padding-bottom: 70px;
+    color: #7a869a;
+    font-size: 15px;
+    > button {
+      background: none;
+      border: none;
+      font-weight: bold;
+      text-decoration: underline;
+      color: black;
+      font-size: 16px;
+    }
+  }
+}
+
+.register-card {
+  max-width: 600px;
+  background: #fcfcfc;
+  padding: 25px 35px;
+  border-radius: 20px;
+  box-shadow: 0 0 1px 0 rgba(9, 30, 66, 0.31),
+    0 8px 12px 0 rgba(9, 30, 66, 0.15);
+
+  > span {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+
+  .register-card__body {
+    > div:nth-of-type(2) {
+      margin-top: 30px;
+    }
+  }
+
+  .register-card__footer {
+    margin-top: 30px;
+    > div {
+      width: 252px;
+    }
+  }
+}

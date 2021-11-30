@@ -1,0 +1,138 @@
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1px 0 #091e424f, 0 3px 5px 0 rgba(9, 30, 66, 0.2);
+  max-width: 315px;
+  min-height: 267px;
+  padding: 10px;
+
+  :global(.DateRangePicker) {
+    margin: 0;
+
+    :global(.DateRangePicker__MonthHeader) {
+      color: #0052cc;
+    }
+
+    :global(.DateRangePicker__MonthDates) {
+      border: none;
+    }
+
+    :global(.DateRangePicker__Weekdays) {
+      th {
+        border: none;
+
+        abbr {
+          color: #6b778c;
+        }
+      }
+    }
+
+    :global(.DateRangePicker__Week) {
+      border: none;
+
+      td {
+        border: none;
+        background: transparent;
+      }
+
+      :global(.DateRangePicker__Date) {
+        color: #172b4d;
+      }
+
+      :global(.DateRangePicker__Date--is-disabled) {
+        color: #6b778c;
+      }
+
+      :global(.DateRangePicker__Date--is-selected) {
+        color: #0052cc;
+        font-weight: bold;
+      }
+
+      :global(.DateRangePicker__Date--is-highlighted) {
+        color: #0052cc;
+        font-weight: bold;
+      }
+
+      :global(.DateRangePicker__CalendarHighlight--single) {
+        border: 1px solid #0052cc;
+        border-radius: 3px;
+      }
+
+      :global(.DateRangePicker__CalendarSelection) {
+        border: 1px solid #0052cc;
+      }
+
+      :global(.DateRangePicker__CalendarSelection--start) {
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border-right-width: 0;
+        background: transparent;
+      }
+
+      :global(.DateRangePicker__CalendarSelection--start--is-pending) {
+        border-left: 1px solid #0052cc !important;
+      }
+
+      :global(.DateRangePicker__CalendarSelection--end) {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-left-width: 0;
+        background: transparent;
+      }
+
+      :global(.DateRangePicker__CalendarSelection--end--is-pending) {
+        border-right: 1px solid #0052cc !important;
+      }
+
+      :global(.DateRangePicker__CalendarSelection--is-pending) {
+        background: transparent;
+      }
+
+      :global(.DateRangePicker__CalendarSelection--single--is-pending) {
+        border-radius: 3px;
+        background: transparent;
+        border: 1px solid #0052cc;
+      }
+
+      :global(.DateRangePicker__CalendarSelection--segment),
+      :global(.DateRangePicker__CalendarSelection--start--is-pending),
+      :global(.DateRangePicker__CalendarSelection--end--is-pending) {
+        background: transparent;
+        border: none;
+        border-top: 1px solid #0052cc;
+        border-bottom: 1px solid #0052cc;
+      }
+    }
+
+    :global(.DateRangePicker__PaginationArrow) {
+      &:hover {
+        background: transparent;
+      }
+    }
+
+    :global(.DateRangePicker__PaginationArrow--previous) {
+      :global(.DateRangePicker__PaginationArrowIcon--previous) {
+        border-right: 8px solid #a5adba;
+      }
+
+      &:hover {
+        :global(.DateRangePicker__PaginationArrowIcon--previous) {
+          border-right: 8px solid darken(#a5adba, 25%);
+        }
+      }
+    }
+
+    :global(.DateRangePicker__PaginationArrow--next) {
+      :global(.DateRangePicker__PaginationArrowIcon--next) {
+        border-left: 8px solid #a5adba;
+      }
+
+      &:hover {
+        :global(.DateRangePicker__PaginationArrowIcon--next) {
+          border-left: 8px solid darken(#a5adba, 25%);
+        }
+      }
+    }
+  }
+}

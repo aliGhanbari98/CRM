@@ -1,0 +1,43 @@
+@import 'assets/styles/variables.scss';
+
+.addCustomer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  .form {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 rgba(9, 30, 66, 0.31),
+      0 8px 12px 0 rgba(9, 30, 66, 0.15);
+    background-color: #ffffff;
+    padding: 20px;
+    > div {
+      margin-top: 15px;
+    }
+
+    .buttonContainer {
+      margin: 0px 50px;
+      margin-top: 20px;
+
+      button {
+        background: $darkGreen-color;
+      }
+    }
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 530px;
+    flex: 1;
+    > img {
+      height: 400px;
+      width: 400px;
+    }
+  }
+}

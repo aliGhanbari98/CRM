@@ -1,0 +1,80 @@
+@import 'assets/styles/variables';
+
+.dashboard {
+  .row {
+    display: flex;
+    margin: 20px 0;
+
+    > * {
+      flex: 1 0 21%;
+      margin: 0 10px;
+      //   min-height: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .card {
+      //   margin-top: 20px;
+      height: 100%;
+    }
+
+    .funnelCard {
+      position: relative;
+
+      .extraRates {
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        display: flex;
+
+        > div {
+          > :first-child {
+            font-size: 16px;
+            font-weight: bold;
+            color: $secondary-color;
+            margin-right: 10px;
+          }
+
+          > :last-child {
+            font-size: 14px;
+            color: $secondary-text;
+          }
+        }
+
+        > :first-child {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    .table {
+      height: 100%;
+      margin-top: 20px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      > :last-child {
+        margin-top: 10px;
+        flex: 1;
+      }
+    }
+
+    .innerRow {
+      margin: 0;
+    }
+
+    .funnelSelect {
+      width: 120px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}

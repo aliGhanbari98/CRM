@@ -1,0 +1,43 @@
+.container {
+  width: fit-content;
+}
+
+.colorPicker {
+  height: 27px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f4f5f7;
+  border-radius: 3px;
+  padding-left: 2px;
+
+  > span {
+    flex: 1;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #344563;
+  }
+}
+
+.color {
+  width: 23px;
+  height: 23px;
+  border-radius: 2px;
+}
+.swatch {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.popover {
+  position: absolute;
+  z-index: 2;
+}
+.cover {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}

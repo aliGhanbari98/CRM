@@ -1,0 +1,38 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+
+  .inputWrapper {
+    display: flex;
+
+    > div:last-child {
+      min-width: 136px;
+
+      > div {
+        border: 2px solid #dfe1e6;
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 40px;
+      }
+    }
+
+    .select {
+      > div {
+        width: 70px;
+        font-size: 14px;
+
+        > div {
+          border: 2px solid #dfe1e6;
+          border-right: none;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.selectOptions {
+  z-index: 1;
+}

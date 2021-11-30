@@ -1,0 +1,65 @@
+@import 'assets/styles/variables';
+
+.dashboard {
+  .ticketsInfo {
+    display: flex;
+    justify-content: space-between;
+
+    .openTickets {
+      margin-top: 15px;
+
+      table {
+        tr {
+          td {
+            padding: 5px 10px 5px 15px;
+          }
+        }
+      }
+    }
+
+    > :first-child {
+      flex: 1 0 75%;
+    }
+
+    > :last-child {
+      flex: 1 0 15%;
+      margin-left: 20px;
+
+      .tickets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        flex: 1;
+        padding: 0px 10px 20px 10px;
+        color: $secondary-color;
+
+        > div {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .total {
+          > span {
+            font-weight: 500;
+            font-size: 18px;
+          }
+        }
+
+        > *:not(.total) {
+          > span {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  .form {
+    margin-top: 20px;
+
+    .newTicket {
+      margin-top: 25px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #8080801c;
+  margin-top: 10px;
+
+  > *:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  .tab {
+    width: fit-content;
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding: 5px 10px;
+    color: #42526e;
+    font-weight: 300;
+    cursor: pointer;
+    transition: border 0.15s;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+
+    &.selected {
+      font-weight: 500;
+      border-bottom: 2px solid #0065ff;
+
+      span {
+        color: #0065ff !important;
+      }
+    }
+  }
+
+  .small {
+    font-size: 16px;
+  }
+}
+
+.noBorder {
+  border-bottom: none;
+}

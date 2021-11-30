@@ -1,0 +1,38 @@
+.areaInput {
+  margin-top: 20px;
+  min-width: 206px;
+
+  > div {
+    font-size: 12px;
+
+    label {
+      padding: 0;
+
+      > div {
+        padding: 0;
+
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #06142b;
+        }
+      }
+    }
+
+    > div {
+      width: 100%;
+
+      > div > div {
+        background-color: #f4f5f7;
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+  }
+
+  &.noMargin {
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,38 @@
+@import 'assets/styles/variables.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .button {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    height: 40px;
+
+    &:not(.subtle-link) {
+      padding: 0 20px;
+    }
+
+    &.subtle-link {
+      color: $secondary-color !important;
+
+      &:hover,
+      &:focus {
+        color: lighten($secondary-color, 20%) !important;
+      }
+    }
+
+    &.border {
+      border: solid 3px;
+    }
+
+    > span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}

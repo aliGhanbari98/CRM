@@ -1,0 +1,24 @@
+.thankYou_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+
+  > img {
+    width: 350px;
+    height: 350px;
+  }
+
+  > span {
+    font-size: 22px;
+    margin-top: 40px;
+    font-weight: 500;
+  }
+
+  .thankYou {
+    font-size: 30px;
+  }
+}

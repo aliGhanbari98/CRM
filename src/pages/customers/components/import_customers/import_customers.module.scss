@@ -1,0 +1,17 @@
+@import 'assets/styles/variables.scss';
+
+.importCustomers {
+  width: 100%;
+  height: 619px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0 rgba(9, 30, 66, 0.31),
+    0 8px 12px 0 rgba(9, 30, 66, 0.15);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .uploader {
+    margin-top: 70px;
+  }
+}

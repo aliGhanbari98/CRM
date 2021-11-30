@@ -1,0 +1,66 @@
+@import 'assets/styles/variables.scss';
+
+.breadCrumbs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > div {
+    &:first-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      > div {
+        margin-left: 10px;
+        &:first-child {
+          > div {
+            button {
+              > span {
+                font-size: 22px;
+              }
+            }
+            &:last-child {
+              button {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .search {
+      display: flex;
+
+      .button {
+        margin-right: 15px;
+
+        button {
+          color: $primary-color !important;
+
+          span {
+            color: $primary-color !important;
+          }
+        }
+      }
+
+      > :not(.button) > div {
+        height: 40px;
+      }
+    }
+  }
+
+  > :last-child {
+    margin-top: 15px;
+  }
+
+  & span {
+    color: #06142b;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+}

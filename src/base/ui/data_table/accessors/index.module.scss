@@ -1,0 +1,47 @@
+@import 'assets/styles/variables';
+
+.actions {
+  display: flex;
+
+  button {
+    padding: 0;
+
+    svg {
+      color: $blueGray-color;
+    }
+  }
+}
+
+.status {
+  font-size: 11px;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+
+  &.Running {
+    background: $green-color;
+  }
+
+  &.Coming {
+    background: $purple-color;
+  }
+
+  &.Answerd {
+    background: $green-color;
+  }
+
+  &.Closed {
+    background: $red-color;
+  }
+
+  &.Paused {
+    background: $yellow-color;
+  }
+
+  &.Done {
+    background: $blueGray-color;
+  }
+  &.Pending {
+    background: $yellow-color;
+  }
+}

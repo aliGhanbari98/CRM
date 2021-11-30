@@ -1,0 +1,33 @@
+.section {
+  margin-top: 17px;
+  > span {
+    color: #06142b;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .phoneInput {
+    margin-top: 20px;
+  }
+}
+
+.companySection {
+  position: relative;
+  z-index: 0;
+}
+
+.section-inputs {
+  .section-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    > div:first-of-type {
+      margin-right: 48px;
+    }
+  }
+}
+
+.select {
+  margin-top: 20px;
+}

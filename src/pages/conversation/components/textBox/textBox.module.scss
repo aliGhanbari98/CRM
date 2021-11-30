@@ -1,0 +1,48 @@
+@import 'assets/styles/variables.scss';
+
+.textBox {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  .customizedTextArea {
+    > div {
+      textarea {
+        min-height: 150px;
+        padding-right: 200px;
+      }
+    }
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0px 20px;
+    > img {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      > button {
+        margin: 0px;
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.uploaderContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}

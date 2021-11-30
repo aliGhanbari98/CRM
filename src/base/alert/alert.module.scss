@@ -1,0 +1,60 @@
+@import 'assets/styles/variables.scss';
+
+.alert {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 4999;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 20px 10px 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #a6e6ff;
+    z-index: 5000;
+
+    outline: none;
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      .title {
+        margin-left: 5px;
+      }
+    }
+    .body {
+      margin-top: 30px;
+    }
+    .footer {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: 20px;
+    }
+  }
+
+  .danger {
+    background-color: $red-color;
+  }
+
+  .warning {
+    background-color: $yellow-color;
+  }
+
+  .success {
+    background-color: #c8ffe2;
+  }
+}

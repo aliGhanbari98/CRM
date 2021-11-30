@@ -1,0 +1,566 @@
+@import 'assets/styles/variables.scss';
+
+@keyframes fadeOutTable {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInTable {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.campaign {
+  // overflow: hidden;
+  // height: 500px;
+  // > section {
+  //   overflow: auto;
+  // }
+  .dashboard {
+    .row {
+      display: flex;
+      margin: 20px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      > * {
+        flex: 1 0 21%;
+        margin: 0 10px;
+        min-height: 220px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .summerySelect {
+        width: 100%;
+        font-size: 14px;
+      }
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        color: $secondary-color;
+        padding: 15px 20px;
+        font-size: 14px;
+
+        header {
+          display: flex;
+          justify-content: space-between;
+          font-weight: 500;
+        }
+
+        .items {
+          display: flex;
+          justify-content: space-between;
+
+          span:last-child {
+            width: 100px;
+            text-align: center;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .upcoming {
+        margin-top: 15px;
+
+        table {
+          tr {
+            td {
+              padding: 7px 10px 7px 15px;
+            }
+          }
+        }
+      }
+
+      .running {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .total {
+    display: flex;
+    flex-direction: column;
+
+    .details {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+      color: $secondary-text;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+
+      span:first-child {
+        margin-right: 30px;
+      }
+    }
+
+    .cardTabs {
+      border-radius: 10px;
+      box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15),
+        0px 0px 1px rgba(9, 30, 66, 0.31);
+      background: #fff;
+
+      .content {
+        padding: 20px;
+
+        .table {
+          // TODO: use ReactTransitionGroup
+          &.active {
+            animation: fadeInTable 0.1s linear;
+            animation-fill-mode: forwards;
+            -webkit-animation: fadeInTable 0.1s linear;
+            -webkit-animation-fill-mode: forwards;
+            display: block;
+          }
+
+          &.disable {
+            animation: fadeOutTable 0.1s linear;
+            animation-fill-mode: forwards;
+            -webkit-animation: fadeOutTable 0.1s linear;
+            -webkit-animation-fill-mode: forwards;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .insight {
+    .row {
+      display: flex;
+      margin: 20px 0;
+
+      .actions {
+        display: flex;
+
+        button {
+          padding: 0;
+
+          svg {
+            color: $blueGray-color;
+          }
+        }
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      > * {
+        flex: 1 0 20%;
+        margin: 0 7px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .summary {
+        margin-top: 10px;
+        color: #06142b;
+
+        > * {
+          margin: 15px 0;
+        }
+
+        h4 {
+          font-weight: bold;
+        }
+
+        > div {
+          display: flex;
+
+          span:first-child {
+            font-weight: 300;
+          }
+
+          span:last-child {
+            font-weight: 400;
+            margin-left: 5px;
+          }
+        }
+
+        footer {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 0;
+
+          button {
+            font-weight: 500;
+            font-size: 16px;
+            height: 20px;
+            margin-top: 0px;
+            padding: 0;
+
+            &:hover,
+            &:focus {
+              color: lighten(#0052cc, 15%);
+            }
+          }
+        }
+      }
+
+      .funnelSelect {
+        width: 95px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .funnelCard {
+        position: relative;
+
+        .extraRates {
+          position: absolute;
+          bottom: 10px;
+          right: 5px;
+          display: flex;
+
+          > div {
+            > :first-child {
+              font-size: 16px;
+              font-weight: bold;
+              color: $secondary-color;
+              margin-right: 10px;
+            }
+
+            > :last-child {
+              font-size: 14px;
+              color: $secondary-text;
+            }
+          }
+
+          > :first-child {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .create {
+    > div {
+      position: relative;
+      border-left: 1px solid #344563;
+      padding: 0 30px;
+      padding-bottom: 30px;
+      max-width: 1000px;
+
+      .card {
+        position: relative;
+
+        .toggleButton {
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #42526e;
+          cursor: pointer;
+        }
+
+        > div {
+          padding: 0px;
+        }
+      }
+
+      .segmentCard {
+        width: 554px;
+      }
+    }
+
+    > :last-child {
+      border-left: none;
+      margin-top: 50px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      .title {
+        display: flex;
+
+        > * {
+          font-weight: 500;
+        }
+
+        span {
+          position: absolute;
+          left: -12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #344563;
+          color: #fff;
+          font-weight: bold;
+          width: 24px;
+          height: 24px;
+          border-radius: 100%;
+        }
+      }
+
+      .status {
+        span {
+          width: 18px;
+          height: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+        }
+
+        .valid {
+          color: #00875a;
+          border: 1px solid #00875a;
+        }
+
+        .invalid {
+          color: #de350b;
+          border: 1px solid #de350b;
+
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+
+    .info {
+      margin-top: 30px;
+      .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        > *:nth-child(2) {
+          margin-left: 30px;
+        }
+
+        .inputs {
+          display: flex;
+          flex-direction: column;
+
+          > * {
+            flex: 1;
+          }
+
+          .group {
+            display: flex;
+            margin-top: 20px;
+
+            > * {
+              flex: 1 0 48%;
+
+              &:first-child {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+
+        .calender {
+          margin-top: 18px;
+        }
+      }
+    }
+
+    .segment {
+    }
+
+    .condition {
+      padding-bottom: 0px;
+    }
+
+    .runButton {
+      button {
+        width: 200px !important;
+        background: #00875a;
+
+        &:hover {
+          background: darken(#00875a, 2%);
+        }
+      }
+    }
+  }
+
+  .compare {
+    table {
+      margin-top: 10px;
+    }
+  }
+}
+
+.compareModal {
+  padding: 20px 0;
+
+  > div:first-child {
+    width: 200px;
+  }
+
+  .tableWrapper {
+    border-radius: 10px;
+    box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15),
+      0px 0px 1px rgba(9, 30, 66, 0.31);
+    background: #fff;
+    margin-top: 20px;
+
+    .table {
+      padding: 20px;
+      padding-left: 32px;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.moreInfoClose {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  background: transparent;
+  padding: 0;
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  section {
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15),
+      0px 0px 1px rgba(9, 30, 66, 0.31);
+    border-radius: 7px;
+    padding: 15px 20px;
+  }
+
+  .info {
+    font-weight: 300;
+
+    > div {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      > span {
+        color: $secondary-text;
+        font-weight: 300;
+        font-size: 12px;
+        &:first-child {
+          font-weight: 400;
+          font-size: 14px;
+        }
+        &:last-child {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .date {
+      > div {
+        display: flex;
+        align-items: center;
+        > span {
+          color: $secondary-text;
+          font-weight: 300;
+          font-size: 12px;
+          &:first-child {
+            font-weight: 400;
+            font-size: 14px;
+          }
+          &:last-child {
+            margin-left: 5px;
+          }
+        }
+
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .segment {
+    color: $secondary-text;
+
+    .items {
+      display: flex;
+      font-size: 12px;
+      > div {
+        display: flex;
+        align-items: center;
+        background: #f4f5f7;
+        padding: 2px 8px;
+        border-radius: 3px;
+
+        > span:last-child {
+          width: 18px;
+          height: 18px;
+          transform: translateY(1px);
+        }
+      }
+
+      > div:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .condition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .inputs {
+      display: flex;
+      flex-wrap: wrap;
+
+      .input {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+      }
+    }
+
+    .templateItem {
+      margin-top: 30px;
+    }
+  }
+}

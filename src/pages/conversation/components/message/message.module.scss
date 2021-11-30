@@ -1,0 +1,77 @@
+@import 'assets/styles/variables.scss';
+
+.container {
+  display: flex;
+  .message {
+    min-height: 100px;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    width: fit-content;
+
+    .detail {
+      min-width: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #ede9feb0;
+
+      > img {
+        max-width: 50px;
+        border-radius: 50%;
+      }
+
+      .name {
+        color: $secondary-text;
+        font-size: 12px;
+      }
+
+      .date {
+        color: $secondary-text;
+        font-size: 10px;
+      }
+    }
+
+    .isUser_detail {
+      background: #f7f5ff7a;
+    }
+
+    .content {
+      display: flex;
+      background: rgba(234, 230, 255, 0.8);
+      justify-content: space-between;
+      max-width: 600px;
+      min-width: 300px;
+      .text {
+        width: fit-content;
+        padding: 15px;
+        font-weight: 300px;
+        color: $secondary-color;
+        font-size: 12px;
+      }
+      .attachment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        > img {
+          max-width: 200px;
+        }
+      }
+    }
+
+    .isUser_content {
+      flex-direction: row-reverse;
+      background: rgba(234, 230, 255, 0.4);
+    }
+  }
+
+  .isUser_message {
+    flex-direction: row-reverse;
+  }
+}
+
+.isUser_container {
+  justify-content: flex-end;
+}

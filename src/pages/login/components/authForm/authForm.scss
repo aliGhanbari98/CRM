@@ -1,0 +1,41 @@
+.auth-form {
+  > p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+.verification-input__container {
+  margin-top: 32px;
+  > label {
+    font-size: 14px;
+  }
+  .verification-input {
+    width: 100% !important;
+    height: 40px;
+    background-color: #f4f5f7;
+    border: 2px solid #dfe1e6;
+    border-radius: 3px;
+    margin-top: 8px;
+    input {
+      border: none !important;
+      border-radius: 0px !important;
+      border-bottom: 1px solid black !important;
+      background-color: #f4f5f7;
+      margin-right: 10px;
+    }
+  }
+}
+
+.verification-input__buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.auth-form__button {
+  margin-top: 32px;
+}
